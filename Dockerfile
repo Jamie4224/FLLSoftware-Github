@@ -1,6 +1,6 @@
 FROM php:7.4-fpm
 
-RUN apt-get update -y
+RUN apt-get update
 
 RUN apt-get install -y git-core curl build-essential openssl libssl-dev \
  && git clone https://github.com/nodejs/node.git \
