@@ -2,7 +2,7 @@ FROM php:7.4-fpm
 
 RUN apt-get update
 
-RUN apt-get install -y git-core curl build-essential openssl libssl-dev python python3 \
+RUN apt-get install -y git-core curl build-essential openssl libssl-dev python3 python3-distutils \
  && git clone https://github.com/nodejs/node.git \
  && cd node \
  && ./configure \
