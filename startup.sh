@@ -1,5 +1,6 @@
 #!/bin/bash
 git clone -b master https://$TOKEN:x-oauth-basic@github.com/Jamie4224/FLLSoftware.git /repo/
+mkdir /usr/src/app/repository
 cp -R /repo/* /usr/src/app/repository/
 
 cp /config/.env /usr/src/app/repository/web
