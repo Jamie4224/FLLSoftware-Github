@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone -b docker https://$TOKEN:x-oauth-basic@github.com/Jamie4224/FLLSoftware.git /repo/
+git clone -b master https://$TOKEN:x-oauth-basic@github.com/Jamie4224/FLLSoftware.git /repo/
 cp -R /repo/* /usr/src/app/repository/
 
 cp /config/.env /usr/src/app/repository/web
