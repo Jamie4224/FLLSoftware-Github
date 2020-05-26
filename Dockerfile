@@ -12,7 +12,7 @@ RUN apt-get install git-core curl build-essential openssl libssl-dev \
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-RUN git clone -b docker https://<token>:x-oauth-basic@github.com/Jamie4224/FLLSoftware.git /repo/
+RUN git clone -b docker https://$token:x-oauth-basic@github.com/Jamie4224/FLLSoftware.git /repo/
 RUN cp -R /repo/* /usr/src/app/repository/
 
 RUN cp /config/.env /usr/src/app/repository/web
